@@ -1,0 +1,259 @@
+/* Color styles */
+
+/* Body
+White #FFFFFF */
+
+/* Primary Brand 
+Iris #4D5AE5 */
+
+/* Dark 
+Navy blue #2E2F42 */
+
+/* Success 
+GREEN #31D0AA */
+
+/* Text 
+SLATE #434455 */
+
+/* Subtle Text 
+LIGHT SLATE #8E8F99 */
+
+/* Accent 
+cornflower #E7E9FC */
+
+/* Light 
+CLOUD #F4F4FD */
+
+:root {
+    /* Colors */
+    --primary-brand-color: #4D5AE5;
+    --title-text-color: #2E2F42;
+    --description-text-color: #434455;
+    --background-light-color: #F4F4FD;
+    --button-border-color: #E7E9FC;
+
+    /* Body */
+    --font-weight-body: 600;
+    --line-height-body: 1.5;
+    --letter-spacing-body: 0.02em;
+
+    /* Logo */
+    --font-weight-logo: 800;
+    --font-size-logo: 18px;
+    --line-height-logo: 1.33;
+    --letter-spacing-logo: 0.03;
+
+    /* Buttons */
+    --font-family-button: Roboto;
+    --font-weight-button: 600;
+    --line-height-button: 1.5;
+    --align-items-button: center;
+    --letter-spacing-button: 0.04em;
+
+    /* Section title */
+    --font-size-section-title: 36px;
+    --line-height-section-title: 1.11;
+}
+
+/* Фон всієї сторінки */
+body {
+    background-color: #ffffff;
+    color: var(--title-text-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1128px;
+    outline: 2px solid tomato;
+}
+
+.list {
+    list-style: none;
+}
+
+.nav-title {
+    text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
+    line-height: var(--line-height-logo);
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+ 
+}
+
+.first-logo {
+    color: var(--primary-brand-color);
+}
+
+/* Навігація */
+.nav-title {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.nav-title:hover,
+.nav-title:focus {
+    color: #434455;
+}
+
+/* Контакти */
+.contact-description {
+    color: var(--description-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contact-description:hover,
+.contact-description:focus {
+    color: var(--primary-brand-color);
+}
+
+/* Герой */
+.hero {
+    background-color: var(--title-text-color);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-description {
+font-size: 56px;
+line-height: 1.07;
+
+margin-top: 0;
+margin-bottom: 48px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 12px 24px;
+    min-width: 69px;
+    height: 48px;
+
+    background-color: #FFFFFF;
+    color: var(--title-text-color);
+
+    cursor: pointer;
+    
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button);
+    align-items: var(--align-items-button);
+    letter-spacing: var(--letter-spacing-button);
+}
+
+.button-order {
+    min-width: 170px;
+    height: 51px;
+
+    line-height: 1.19;
+
+    padding: 16px 32px;
+}
+
+.button.primary {
+   background-color: var(--primary-brand-color);
+   color: #ffffff; 
+}
+
+.button.secondary {
+    border-color: var(--button-border-color);
+    background-color: var(--background-light-color);
+    color: var(--primary-brand-color);
+}
+
+.secondary:hover,
+.secondary:focus {
+    background-color: var(--primary-brand-color);
+    color: var(--background-light-color);
+}
+
+/* Section name */
+.section-title {
+    font-size: var(--font-size-section-title);
+    line-height: var(--line-height-section-title);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Secret name */
+.secret-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.description-text,
+.filter-name {
+    color: var(--description-text-color);
+
+    font-weight: 400;
+}
+
+/* Команда */
+.team {
+    background-color: var(--background-light-color);
+}
+
+.team-color {
+    background-color: #ffffff;
+}
+
+/* Foother */
+.footer {
+    background-color: var(--title-text-color);
+    color: #E7E9FC;
+}
+
+.logo-foother {
+    color: var(--background-light-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+}
+
+.first-logo {
+    color: var(--primary-brand-color);
+}
+
+.footer-description {
+font-weight: 400;
+}
+
+/* Project cards */
+.card-link {
+    text-decoration: none;
+}
+
+.name {
+    color: var(--title-text-color);
+
+    font-size: 20px;
+    line-height: 1.2px;
+}
