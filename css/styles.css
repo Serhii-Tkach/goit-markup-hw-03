@@ -80,13 +80,16 @@ body {
     list-style: none;
 }
 
-/* .site-nav {
-    display: inline-block;
-} */
+/* Nav */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 
 /* Логотип */
 .logo {
     display: inline-block;
+    margin-right: 0;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -99,7 +102,6 @@ body {
     line-height: var(--line-height-logo);
     letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
- 
 }
 
 .first-logo {
@@ -107,10 +109,26 @@ body {
 }
 
 /* Навігація */
+.site-nav {
+    display: flex;
+    margin-left: 76px;
+    padding: 0;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .nav-title {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     text-decoration: none;
     color: var(--title-text-color);
     text-decoration: none;
+
+    /* background-color: red; */
 }
 
 .nav-title:hover,
@@ -119,16 +137,33 @@ body {
 }
 
 /* Контакти */
+.contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 0;
+}
+
 .contact-description {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--description-text-color);
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
+
+    /* background-color: red; */
 }
 
 .contact-description:hover,
 .contact-description:focus {
     color: var(--primary-brand-color);
+}
+
+.header-nav .contact-description:not(:last-child) {
+    margin-right: 40px;
 }
 
 /* Герой */
