@@ -74,15 +74,22 @@ body {
 }
 
 .list {
+    margin-top: 0;
+    margin-bottom: 0;
+
     list-style: none;
 }
 
-.nav-title {
-    text-decoration: none;
-}
+/* .site-nav {
+    display: inline-block;
+} */
 
 /* Логотип */
 .logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--title-text-color);
     text-decoration: none;
 
@@ -101,6 +108,7 @@ body {
 
 /* Навігація */
 .nav-title {
+    text-decoration: none;
     color: var(--title-text-color);
     text-decoration: none;
 }
@@ -184,12 +192,24 @@ margin-bottom: 48px;
     color: var(--background-light-color);
 }
 
-/* Section name */
+/* Цінності компанії */
+.values {
+    margin-top: 120px;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-size: var(--font-size-section-title);
     line-height: var(--line-height-section-title);
     text-align: center;
     text-transform: capitalize;
+}
+
+.description-name {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Secret name */
@@ -206,18 +226,50 @@ margin-bottom: 48px;
 
 .description-text,
 .filter-name {
+    margin-top: 8px;
+    margin-bottom: 0;
+
     color: var(--description-text-color);
 
     font-weight: 400;
 }
 
+/* Можливості компанії */
+.company-capabilities {
+    margin-top: 120px;
+    margin-bottom: 0;
+    }
+
 /* Команда */
 .team {
+    margin-top: 120px;
+    margin-bottom: 0;
+
     background-color: var(--background-light-color);
 }
 
+.team-name {
+    padding-top: 120px;
+}
+
+.team-list {
+    padding-bottom: 120px;
+}
+
 .team-color {
+    padding: 32px;
+
     background-color: #ffffff;
+}
+
+.team-imag {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.worker {
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 /* Foother */
@@ -227,6 +279,11 @@ margin-bottom: 48px;
 }
 
 .logo-foother {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-top: 100px;
+
     color: var(--background-light-color);
     text-decoration: none;
 
@@ -243,15 +300,36 @@ margin-bottom: 48px;
 }
 
 .footer-description {
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 100px;
+
 font-weight: 400;
 }
 
+/* Кнопки фільтрів */
+.filtr-button {
+    margin-top: 96px;
+    margin-bottom: 0;
+}
+
 /* Project cards */
+.project-cards {
+    margin-top: 72px;
+    margin-bottom: 0;
+}
+
+.cards-list {
+    padding-bottom: 120px;
+}
+
 .card-link {
     text-decoration: none;
 }
 
 .name {
+    padding-top: 32px;
+
     color: var(--title-text-color);
 
     font-size: 20px;
