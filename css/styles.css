@@ -70,7 +70,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1128px;
-    outline: 2px solid tomato;
 }
 
 .list {
@@ -84,6 +83,8 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid #E7E9FC;
 }
 
 /* Логотип */
@@ -127,8 +128,6 @@ body {
     text-decoration: none;
     color: var(--title-text-color);
     text-decoration: none;
-
-    /* background-color: red; */
 }
 
 .nav-title:hover,
@@ -153,8 +152,6 @@ body {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-
-    /* background-color: red; */
 }
 
 .contact-description:hover,
@@ -237,12 +234,13 @@ margin-bottom: 48px;
     padding: 0;
 }
 
-.list-values .item {
-    width: 264px;
+.list-values > .item {
+    width: calc((100% - 24px * 3) / 4);
+    margin-right: 24px;
 }
 
-.list-values .item:not(:last-child) {
-    margin-right: 24px;
+.list-values > .item:last-child {
+    margin-right: 0;
 }
 
 .section-title {
@@ -292,12 +290,15 @@ margin-bottom: 48px;
 .list-capabilities {
     display: flex;
     padding-left: 0;
-
-    border: 1px solid #E7E9FC;
 }
 
-.list-capabilities > .item:not(:last-child) {
+.list-capabilities > .item {
+    width: calc((100% - 2 * 24px) / 3);
     margin-right: 24px;
+}
+
+.list-capabilities > .item:last-child {
+    margin-right: 0;
 }
 
 /* Команда */
@@ -372,13 +373,13 @@ margin-bottom: 48px;
 }
 
 .footer-description {
-width: 264px;
+    width: 264px;
 
-margin-top: 0;
-margin-bottom: 0;
-padding-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
 
-font-weight: 400;
+    font-weight: 400;
 }
 
 /* Кнопки фільтрів */
