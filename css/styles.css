@@ -69,7 +69,9 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1128px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .list {
@@ -79,7 +81,7 @@ body {
     list-style: none;
 }
 
-/* Nav */
+/* Header */
 .header-nav {
     display: flex;
     align-items: center;
@@ -90,7 +92,6 @@ body {
 /* Логотип */
 .logo {
     display: inline-block;
-    margin-right: 0;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -171,12 +172,15 @@ body {
 }
 
 .hero-description {
-font-size: 56px;
-line-height: 1.07;
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-top: 188px;
 
-margin-top: 0;
-margin-bottom: 48px;
+    font-size: 56px;
+    line-height: 1.07;
 }
+
+/* Buttons */
 
 .button {
     display: inline-block;
@@ -225,13 +229,12 @@ margin-bottom: 48px;
 }
 
 /* Цінності компанії */
-.values {
-    margin-top: 120px;
-}
+
 
 .list-values {
     display: flex;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 120px;
 }
 
 .list-values > .item {
@@ -245,7 +248,9 @@ margin-bottom: 48px;
 
 .section-title {
     margin-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 72px;
 
     font-size: var(--font-size-section-title);
     line-height: var(--line-height-section-title);
@@ -255,7 +260,7 @@ margin-bottom: 48px;
 
 .description-name {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 }
 
 /* Secret name */
@@ -282,68 +287,50 @@ margin-bottom: 48px;
 }
 
 /* Можливості компанії */
-.company-capabilities {
-    margin-top: 120px;
-    margin-bottom: 0;
-    }
-
 .list-capabilities {
     display: flex;
     padding-left: 0;
+    padding-bottom: 120px;
+    justify-content: space-between;
 }
 
-.list-capabilities > .item {
-    width: calc((100% - 2 * 24px) / 3);
-    margin-right: 24px;
-}
-
-.list-capabilities > .item:last-child {
-    margin-right: 0;
+.link {
+    display: inline-block;
 }
 
 /* Команда */
 .team {
-    margin-top: 120px;
+    margin-top: 0;
     margin-bottom: 0;
 
     background-color: var(--background-light-color);
 }
 
-.team-name {
-    padding-top: 120px;
-}
-
 .team-list {
     display: flex;
-    width: calc((100% - 72px) / 4);
-
-    padding-bottom: 120px;
+    justify-content: space-between;
     padding-left: 0;
+    padding-bottom: 120px;
 }
 
 .team-item {
-    border-radius: 0px 0px 4px 4px;
-
     background-color: #ffffff;
-}
-
-.team-list > .team-item:not(:last-child) {
-    margin-right: 24px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .worker {
-    margin-top: 32px;
-    margin-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
 }
 
 .worker-description {
-    margin-bottom: 32px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-bottom: 32px;
 }
 
-.worker,
-.worker-description {
-    text-align: center;
-}
 
 /* Foother */
 .footer {
@@ -384,14 +371,15 @@ margin-bottom: 48px;
 
 /* Кнопки фільтрів */
 .filtr-button {
-    margin-top: 96px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
 .button-list {
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 96px;
 }
 
 .button-list > .item {
@@ -404,7 +392,7 @@ margin-bottom: 48px;
 
 /* Project cards */
 .project-cards {
-    margin-top: 72px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -412,6 +400,7 @@ margin-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    padding-top: 72px;
     padding-bottom: 120px;
 }
 
@@ -436,9 +425,10 @@ margin-bottom: 48px;
 }
 
 .name {
-    margin-top: 32px;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 16px;
+    padding-top: 32px;
+    padding-left: 16px;
 
     color: var(--title-text-color);
 
@@ -448,6 +438,6 @@ margin-bottom: 48px;
 
 .filter-name {
     margin-top: 8px;
-    margin-bottom: 32px;
-    margin-left: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
